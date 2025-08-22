@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack - Offline - Solo</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <label id="plBet"></label>
+    <div id="dealer">
+
+    </div>
+    <button id="play" onclick="play()">Play</button>
+    <div id="scoreD" class="punt"><label id="lblScoreD"></label></div>
+    <div id="player">
+
+    </div>
+
+    <div id="bet"  class="disabled">
+        <div id="primo"><img src="img/chip_50.png" class="chip"></div>
+        <div id="secondo"><img src="img/chip_25.png" class="chip"><img src="img/chip_100.png" class="chip"></div>
+        <div id="terzo"><img src="img/chip_10.png" class="chip">     <button id="reset" onclick="reset()">X</button>   <img src="img/chip_500.png" class="chip"></div>
+        <div id="quarto"><img src="img/chip_5.png" class="chip">     <label id="totBet">0</label>        <img src="img/chip_1000.png" class="chip"></div>
+    </div>
+    <div id="score" class="punt"><label id="lblScore"></label></div>
+    <div id="buttons">
+        <button id="stay" class="btns" onclick="stay()">Stay</button>
+        <button id="hit" class="btns" onclick="hit()">Hit</button>
+    </div>
+    <div id="footer"><label id="lblFooter"></label></div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

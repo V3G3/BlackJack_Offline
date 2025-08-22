@@ -1,0 +1,224 @@
+body{
+    margin: 0px;
+    background-image: url("img/table.jpg");
+}
+
+#plBet{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+}
+
+#dealer{
+    width: 187.5px;
+    height: 181.5px;
+/*     border-radius: 10px;
+    border: 2px solid red;
+    padding:20px; */
+    margin: auto;
+    margin-top: 150px;
+}
+
+#player{
+    width: 187.5px;
+    height: 181.5px;
+/*     border-radius: 10px;
+    border: 2px solid yellow;
+    padding:20px; */
+    margin: auto;
+    margin-top: 150px;
+}
+
+
+
+.btns{
+    width: 75px;
+    height: 65px;
+    border: none;
+    border-radius: 35px;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#stay{
+    background-color: rgb(224, 70, 70);
+    color:white;
+}
+#stay:hover{
+    background-color: rgb(233, 40, 40);
+}
+#stay:active{
+    background-color: rgb(197, 27, 27);
+}
+#hit{
+    background-color: lime;
+}
+#hit:hover{
+    background-color: rgb(67, 212, 67);
+}
+#hit:active{
+    background-color: rgb(45, 184, 45);
+}
+
+#buttons{
+    width:200px;
+    height:80px;
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-left:1300px;
+    margin-top:-70px;
+}
+
+
+
+.punt{
+    width: 50px;
+    height:50px;
+    border-radius:20px;
+    background-color: black;
+    color:white;
+    font-size: 1.3em;
+    border:3px solid white;
+    font-weight: bold;
+    text-align:center;
+    line-height:50px;
+    margin:auto;
+    margin-top: 20px;
+}
+
+
+#footer{
+    width:200px;
+    height: 50px;
+    border: 3px solid  gold;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+#bet{
+    width: 700px;
+    height: 300px;
+    position:absolute;
+    left:75px;
+    top:560px;
+}
+#bet img {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+#bet.disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+#primo{
+    display:flex;
+    justify-content: center;
+}
+#secondo{
+    display:flex;
+    justify-content:center;
+    gap: 160px;
+}
+#terzo{
+    display:flex;
+    justify-content:center;
+    gap: 150px;
+}
+#quarto{
+    display:flex;
+    justify-content:space-between;
+}
+
+#reset{
+    width: 50px;
+    height: 50px;
+    border:5px solid white;
+    background-color: transparent;
+    text-align:center;
+    line-height: 25px;
+    border-radius: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    color:white;
+    transition: background-color 0.4s, opacity 0.4s,  border 0.4s, color 0.4s;
+}
+#reset:hover{
+    background-color: white;
+    opacity: 0.5;
+    border:5px solid black;
+    color:black;
+}
+#reset:active{
+    background-color: black;
+    opacity: 0.3;
+    border:5px solid white;
+    color:white;
+}
+#reset:disabled{
+    background-color: white;
+    opacity: 0.3;
+    border:5px solid red;
+    color:red;
+}
+
+
+#totBet{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+#play{
+    position: absolute;
+    left: 375px;
+    top: 490px;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s,border 0.5s;
+}
+#play:disabled{
+    background-color: white;
+    color: red;
+    border: 3px solid red;
+}
+#play:enabled{
+    background-color: black;
+    color: whited;
+    border: 3px solid white;
+}
