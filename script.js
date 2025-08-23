@@ -186,11 +186,49 @@ function play(){
     if(deck1.cards.length == 0){
         deck1 = new Deck();
         deck1.shuffle();
+        p1.draw(deck1);
+        dealer.draw(deck1);
+        p1.draw(deck1);
+        dealer.draw(deck1);
     }
-    p1.draw(deck1);
-    dealer.draw(deck1);
-    p1.draw(deck1);
-    dealer.draw(deck1);
+    else if(deck1.cards.length == 1){
+        p1.draw(deck1);
+        deck1 = new Deck();
+        deck1.shuffle();
+        dealer.draw(deck1);
+        p1.draw(deck1);
+        dealer.draw(deck1);
+    }
+    else if(deck1.cards.length == 2){
+        p1.draw(deck1);
+        dealer.draw(deck1);
+        deck1 = new Deck();
+        deck1.shuffle();
+        p1.draw(deck1);
+        dealer.draw(deck1);
+    }
+    else if(deck1.cards.length == 3){
+        p1.draw(deck1);
+        dealer.draw(deck1);
+        p1.draw(deck1);
+        deck1 = new Deck();
+        deck1.shuffle();
+        dealer.draw(deck1);
+    }
+    else if(deck1.cards.length == 4){
+        p1.draw(deck1);
+        dealer.draw(deck1);
+        p1.draw(deck1);
+        dealer.draw(deck1);
+        deck1 = new Deck();
+        deck1.shuffle();
+    }
+    else {
+        p1.draw(deck1);
+        dealer.draw(deck1);
+        p1.draw(deck1);
+        dealer.draw(deck1);
+    }
     dealer.mano.forEach((c) => {
         if (!retro){
             let img = document.createElement("img");
